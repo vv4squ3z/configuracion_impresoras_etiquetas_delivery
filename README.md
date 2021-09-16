@@ -59,12 +59,12 @@ Dimensionamos la imagen según lo que necesitamos y convertimos la imagen a .pcx
    Para imprimir los logos usaremos EPL:
 ```sh
    N
-q800
-Q800,32
-S4
-D12
-ZB
-GG50,50,"NOMBRE"
-P1
+   q800
+   Q800,32
+   S4
+   D12
+   ZB
+   GG50,50,"NOMBRE"
+   P1
    ```
    
