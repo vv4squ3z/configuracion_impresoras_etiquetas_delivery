@@ -32,7 +32,7 @@ Dimensionamos la imagen según lo que necesitamos y convertimos la imagen a .pcx
    Ese archivo debemos enviarlo a la impresora, pero antes debemos crear la imagen en la impresora con el comando GM de EPL II
    
    Para eso, podemos crear un archivo .txt con el siguiente contenido:
-    ```sh
+```sh
    GK"NOMBRE"
    GK"NOMBRE"
    GM"NOMBRE"XXXX
@@ -41,23 +41,23 @@ Dimensionamos la imagen según lo que necesitamos y convertimos la imagen a .pcx
    * "NOMBRE" es el nombre con el que se guardará la imagen en la impresora (máximo 8 caracteres)
    * XXXX es el peso en bytes del archivo .pcx
    Para obtener el peso del archivo podemos usar por ejemplo:
-    ```sh
+```sh
    wc -c ARCHIVO.pcx
    ```
    
    Una vez que tenemos el archivo .txt con las instrucciones para crear la imagen en la impresora enviamos el archivo .txt y el archivo .pcx. (En ese orden)
-     ```sh
+```sh
    lpr -P {IMPRESORA} -o raw ARCHIVO.txt
    lpr -P {IMPRESORA} -o raw ARCHIVO.pcx
    ```
    
    Podemos comprobar si la imagen se guardó en la impresora con el comando EPL:
-   ```sh
+```sh
    GI
    ```
    
    Para imprimir los logos usaremos EPL:
-   ```sh
+```sh
    N
 q800
 Q800,32
